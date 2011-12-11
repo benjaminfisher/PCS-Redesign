@@ -1,0 +1,36 @@
+$column:60px;
+$gutter:20px;
+
+$link_color:#852025;
+$visited_color:#751c21;
+$hover_color:#FAFAFA;
+$active_color:#FFF;
+
+@import 'gradient', 'extras';
+
+html{
+  padding-top:0px;
+  margin-top:0px;
+  width:100%;
+}
+
+body {
+  background: #060606;
+  color:#CCC;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:14px;
+  position: relative;
+  top:-12px;
+  width:(($column + $gutter)*12)+10;
+}
+
+a { color: $link_color; text-decoration:none;
+  &:link { color: $link_color; }
+  &:visited { color:$visited_color; }
+  &:hover { color:#FAFAFA; text-decoration:underline; }
+  &:active { color: $active_color; }
+
+}
+h1 { font-size: 1.71428571em; }
+
+@import 'header', 'sidebar', 'content', 'footer', 'xmas';

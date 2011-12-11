@@ -1,0 +1,73 @@
+#content {
+  float:left;
+  margin-left: $gutter;
+  
+ 
+  div.column{
+    float:left;
+    padding-right:20px;
+    width: 380px;
+    z-index: 10;
+    
+    h1{
+      text-align:center;
+      text-shadow: 1px 1px 0px #333;
+      filter: dropshadow(color=#333, offx=1, offy=1);
+      z-index: -100;
+    }
+    
+    > h1{
+      @include round-top;
+      border-right:2px solid rgba(66,66,66,0.5);
+      height:40px;
+      line-height: 40px;
+      margin-bottom: 0;
+      margin-top: 5px;
+      width: 100.25%;
+    }
+    
+    img {
+      width:100%;
+      z-index: -100;
+    }
+  }
+}
+
+#content div.column > h1{
+  @include round-top(10px);
+  @include col-head-gradient;
+
+}
+#content div.column div.poster{
+  position:relative;
+  
+  img{
+    -webkit-box-shadow: 1px 1px 2px 1px #333;
+    -moz-box-shadow: 1px 1px 2px 1px #333;
+    box-shadow: 1px 1px 2px 1px #333;
+  }
+  
+  div.overlay{
+    @include round-bottom;
+    background-color: rgba(0,0,0, 0.9);
+    display:none;
+    height:50%;
+    position:absolute;
+    width:100%;
+  }
+  
+  ul, p{
+    margin-left: 84px;
+    margin-right:2em;
+  }
+    
+  &:hover div.overlay{
+    display:block;
+  }
+}
+
+#content div.column div.overlay h1 { font-size:1.28em; margin-left: 84px; text-align:left; }
+#content div.column div.overlay p.dates { font-weight: bold; }
+
+#content div.column div.overlay p.links a { padding:0.5em; }
+#content div.column div.overlay p.links { color:#852025; }

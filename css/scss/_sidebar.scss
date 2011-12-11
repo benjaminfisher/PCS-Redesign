@@ -1,0 +1,92 @@
+nav#sidebar {
+  float:left;
+  position:relative;
+  width:150px;
+}
+
+#social ul {
+  overflow-x:hidden;
+  position:relative;
+  left:35px;
+  top: 5px;
+  
+  li{
+    float: left;
+    height:32px;
+    margin-right:10px;
+    text-indent: -9999em;
+    width:32px;
+    
+    &:nth-of-type(2) a{ background-position: -32px 0; }
+    &:nth-of-type(3) a{ background-position: -64px 0; }
+    
+    a{
+      background-image: url('../images/social_sprite.png');
+      display:block;
+      opacity:0.5;
+      height:32px;
+      width:32px;
+      
+      &:hover{
+        opacity:1;
+        @include opac-trans;
+      }
+    }
+  }
+}
+
+#main_nav{
+  box-shadow: 1px 1px 2px 1px #333;
+  height:520px;
+  margin: 1em 20px 0 0;
+  width:150px;
+  
+  -webkit-box-shadow: 1px 1px 2px 1px #333;
+  -moz-box-shadow: 1px 1px 2px 1px #333;
+  
+  @include round-right;
+  @include nav-gradient;
+  
+  > li{
+    font-size:1.28em;
+    font-weight:bold;
+    border-bottom: 2px solid #2c0d0c;
+    padding: 0.5em;
+    text-shadow: 1px 1px 0px #111;
+    
+    >a{
+      margin-bottom:5px;
+      &:hover{
+        text-decoration:none;
+        color:lighten($link_color, 10%);
+      }
+    }
+  }
+  ul li{
+    font-size:14px;
+    font-weight:normal;
+    margin:1em 0;
+    text-shadow: none;
+    
+    a{
+      color:#060606;
+      &:hover{
+        color:$hover_color;
+      }
+    }
+  }
+  li ul{
+    display:none;
+    margin-bottom:-22px;
+    padding-left: $gutter;
+    position:relative;
+    right:$gutter;
+    width:142px;
+    
+    @include nav-sub-gradient;
+  }
+}
+
+.no-js #main_nav li:hover ul{
+    display:block;
+}

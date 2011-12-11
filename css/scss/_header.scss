@@ -1,0 +1,25 @@
+header { height: 60px; width:1090px;}
+
+#search_bar { 
+  float:left;
+  left:30px;
+  position: relative;
+  top:20px;
+  width:140px;
+  
+  input{
+    @include round-all;
+    float:left;
+    margin-right:0.5em;
+    width:90px;
+  }
+}
+
+header h1 {
+  height:100%;
+  margin-left:170px;
+  position:relative;
+  width: ($column + $gutter)*10;
+  
+  @include header_gradient;
+}

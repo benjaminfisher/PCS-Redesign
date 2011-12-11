@@ -1,0 +1,16 @@
+footer{
+  float:left;
+  margin-top:
+  20px;
+  
+  div{
+    float:left;
+    width: ($column*2 + $gutter + 10);
+    
+    p{ margin:0; }
+  }
+  div.column{
+    margin-left:$gutter;
+    width: 380px;
+  }
+}
