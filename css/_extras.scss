@@ -1,0 +1,39 @@
+@mixin round-top($radius: 20px) {
+  -moz-border-radius-topleft: $radius;
+  -moz-border-radius-topright: $radius;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-radius: $radius $radius 0px 0px;
+  border-radius: $radius $radius 0px 0px;
+}
+
+@mixin round-bottom($radius: 20px) {
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  -webkit-border-radius: 0px 0px $radius $radius;
+  border-radius: 0px 0px $radius $radius;
+}
+
+@mixin round-right($radius: 20px){
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: $radius;
+  -moz-border-radius-bottomright: $radius;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-radius: 0px $radius $radius 0px;
+  border-radius: 0px $radius $radius 0px;
+}
+
+@mixin round-all($radius: 10px){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin opac-trans($time: 500ms, $type: ease){
+  -webkit-transition: opacity $time $type;
+  -moz-transition: opacity $time $type;
+  -o-transition: opacity $time $type;
+  transition: opacity $time $type;
+}
