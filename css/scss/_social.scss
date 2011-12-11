@@ -1,0 +1,30 @@
+#social ul {
+  overflow-x:hidden;
+  position:relative;
+  left:35px;
+  top: 5px;
+  
+  li{
+    float: left;
+    height:32px;
+    margin-right:10px;
+    text-indent: -9999em;
+    width:32px;
+    
+    &:nth-of-type(2) a{ background-position: -32px 0; }
+    &:nth-of-type(3) a{ background-position: -64px 0; }
+    
+    a{
+      background-image: url('../images/social_sprite.png');
+      display:block;
+      opacity:0.5;
+      height:32px;
+      width:32px;
+      
+      &:hover{
+        opacity:1;
+        @include opac-trans;
+      }
+    }
+  }
+}

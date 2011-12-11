@@ -337,11 +337,6 @@ header h1 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
   /* IE6-8 */ }
 
-nav#sidebar {
-  float: left;
-  position: relative;
-  width: 150px; }
-
 #social ul {
   overflow-x: hidden;
   position: relative;
@@ -369,6 +364,11 @@ nav#sidebar {
         -moz-transition: opacity 500ms ease;
         -o-transition: opacity 500ms ease;
         transition: opacity 500ms ease; }
+
+nav#sidebar {
+  float: left;
+  position: relative;
+  width: 150px; }
 
 #main_nav {
   box-shadow: 1px 1px 2px 1px #333;
