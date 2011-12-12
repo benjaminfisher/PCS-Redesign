@@ -563,8 +563,8 @@ div.xmas {
    ========================================================================== */
 /* For image replacement */
 .ir {
-  color: rgba(0, 0, 0, 0) !important;
   display: block;
+  text-indent: -999em;
   overflow: hidden;
   background-repeat: no-repeat;
   text-align: left;
