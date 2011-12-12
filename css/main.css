@@ -8,9 +8,11 @@
 /* =============================================================================
    HTML5 element display
    ========================================================================== */
+/* line 11, scss/main.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block; }
 
+/* line 14, scss/main.scss */
 audio[controls], canvas, video {
   display: inline-block;
   *display: inline;
@@ -28,6 +30,7 @@ audio[controls], canvas, video {
  * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
+/* line 31, scss/main.scss */
 html {
   font-size: 100%;
   overflow-y: scroll;
@@ -36,11 +39,13 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
+/* line 39, scss/main.scss */
 body {
   margin: 0;
   font-size: 14px;
   line-height: 1.2; }
 
+/* line 44, scss/main.scss */
 body, button, input, select, textarea {
   font-family: sans-serif;
   color: #222; }
@@ -49,11 +54,13 @@ body, button, input, select, textarea {
  * These selection declarations have to be separate
  * No text-shadow: twitter.com/miketaylr/status/12228805301
  */
+/* line 52, scss/main.scss */
 ::-moz-selection {
   background: #c83038;
   color: #fff;
   text-shadow: none; }
 
+/* line 57, scss/main.scss */
 ::selection {
   background: #c83038;
   color: #fff;
@@ -62,34 +69,43 @@ body, button, input, select, textarea {
 /* =============================================================================
    Links
    ========================================================================== */
+/* line 65, scss/main.scss */
 a {
   color: #00e; }
 
+/* line 68, scss/main.scss */
 a:visited {
   color: #551a8b; }
 
+/* line 71, scss/main.scss */
 a:focus {
   outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
+/* line 75, scss/main.scss */
 a:hover, a:active {
   outline: 0; }
 
 /* =============================================================================
    Typography
    ========================================================================== */
+/* line 81, scss/main.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
+/* line 84, scss/main.scss */
 b, strong {
   font-weight: bold; }
 
+/* line 87, scss/main.scss */
 blockquote {
   margin: 1em 40px; }
 
+/* line 90, scss/main.scss */
 dfn {
   font-style: italic; }
 
+/* line 93, scss/main.scss */
 hr {
   display: block;
   height: 1px;
@@ -98,11 +114,13 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
+/* line 101, scss/main.scss */
 ins {
   background: #ff9;
   color: #000;
   text-decoration: none; }
 
+/* line 106, scss/main.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -110,51 +128,62 @@ mark {
   font-weight: bold; }
 
 /* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+/* line 113, scss/main.scss */
 pre, code, kbd, samp {
   font-family: monospace, monospace;
   _font-family: 'courier new', monospace;
   font-size: 1em; }
 
 /* Improve readability of pre-formatted text in all browsers */
+/* line 119, scss/main.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word; }
 
+/* line 124, scss/main.scss */
 q {
   quotes: none; }
 
+/* line 127, scss/main.scss */
 q:before, q:after {
   content: "";
   content: none; }
 
+/* line 131, scss/main.scss */
 small {
   font-size: 85%; }
 
 /* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
+/* line 135, scss/main.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
+/* line 141, scss/main.scss */
 sup {
   top: -0.5em; }
 
+/* line 144, scss/main.scss */
 sub {
   bottom: -0.25em; }
 
 /* =============================================================================
    Lists
    ========================================================================== */
+/* line 150, scss/main.scss */
 ul, ol {
   margin: 1em 0;
   list-style-type: none;
   padding: 0; }
 
+/* line 155, scss/main.scss */
 dd {
   margin: 0 0 0 40px; }
 
+/* line 158, scss/main.scss */
 nav ul, nav ol {
   list-style: none;
   margin: 0;
@@ -167,6 +196,7 @@ nav ul, nav ol {
  * Improve image quality when scaled in IE7
  * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
+/* line 170, scss/main.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic; }
@@ -174,21 +204,25 @@ img {
 /*
  * Correct overflow displayed oddly in IE9 
  */
+/* line 177, scss/main.scss */
 svg:not(:root) {
   overflow: hidden; }
 
 /* =============================================================================
    Figures
    ========================================================================== */
+/* line 183, scss/main.scss */
 figure {
   margin: 0; }
 
 /* =============================================================================
    Forms
    ========================================================================== */
+/* line 189, scss/main.scss */
 form {
   margin: 0; }
 
+/* line 192, scss/main.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -198,12 +232,14 @@ fieldset {
  * 1. Correct color not inheriting in IE6/7/8/9 
  * 2. Correct alignment displayed oddly in IE6/7 
  */
+/* line 201, scss/main.scss */
 legend {
   border: 0;
   *margin-left: -7px;
   padding: 0; }
 
 /* Indicate that 'label' will shift focus to the associated form element */
+/* line 207, scss/main.scss */
 label {
   cursor: pointer; }
 
@@ -212,6 +248,7 @@ label {
  * 2. Remove margins in FF3/4 S5 Chrome
  * 3. Define consistent vertical alignment display in all browsers
  */
+/* line 215, scss/main.scss */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
@@ -222,6 +259,7 @@ button, input, select, textarea {
  * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
  * 2. Correct inner spacing displayed oddly in IE6/7
  */
+/* line 225, scss/main.scss */
 button, input {
   line-height: normal;
   *overflow: visible; }
@@ -230,6 +268,7 @@ button, input {
  * 1. Display hand cursor for clickable form elements
  * 2. Allow styling of clickable form elements in iOS
  */
+/* line 233, scss/main.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button; }
@@ -237,9 +276,11 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 /*
  * Consistent box sizing and appearance
  */
+/* line 240, scss/main.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box; }
 
+/* line 243, scss/main.scss */
 input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
@@ -249,22 +290,26 @@ input[type="search"] {
  * Remove inner padding and border in FF3/4
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ 
  */
+/* line 252, scss/main.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
 /* Remove default vertical scrollbar in IE6/7/8/9 */
+/* line 257, scss/main.scss */
 textarea {
   overflow: auto;
   vertical-align: top; }
 
 /* Colors for form validity */
+/* line 262, scss/main.scss */
 input:invalid, textarea:invalid {
   background-color: #f0dddd; }
 
 /* =============================================================================
    Tables
    ========================================================================== */
+/* line 268, scss/main.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -273,11 +318,13 @@ table {
    Primary styles
    Author: Benjamin J. Fisher
    ========================================================================== */
+/* line 14, scss/_global.scss */
 html {
   padding-top: 0px;
   margin-top: 0px;
   width: 100%; }
 
+/* line 20, scss/_global.scss */
 body {
   background: #060606;
   color: #CCC;
@@ -287,40 +334,53 @@ body {
   top: -12px;
   width: 970px; }
 
+/* line 30, scss/_global.scss */
 a {
   color: #852025;
   text-decoration: none; }
+  /* line 31, scss/_global.scss */
   a:link {
     color: #852025; }
+  /* line 32, scss/_global.scss */
   a:visited {
     color: #751c21; }
+  /* line 33, scss/_global.scss */
   a:hover {
     color: #FAFAFA;
     text-decoration: underline; }
+  /* line 34, scss/_global.scss */
   a:active {
     color: white; }
 
+/* line 37, scss/_global.scss */
 h1 {
   font-size: 1.71428571em; }
 
+/* line 3, scss/_header.scss */
 header {
   height: 60px;
   width: 1090px; }
 
+/* line 5, scss/_header.scss */
 #search_bar {
   float: left;
   left: 30px;
   position: relative;
   top: 20px;
   width: 140px; }
+  /* line 12, scss/_header.scss */
   #search_bar input {
-    -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
     border-radius: 10px;
     float: left;
     margin-right: 0.5em;
     width: 90px; }
 
+/* line 20, scss/_header.scss */
 header h1 {
   height: 100%;
   margin-left: 170px;
@@ -336,33 +396,41 @@ header h1 {
   background: linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%), transparent url("../images/pcs_logo.png") 0 0 no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
   /* IE6-8 */ }
+  /* line 26, scss/_header.scss */
   header h1 a {
     height: 100%;
     width: 100%; }
+  /* line 30, scss/_header.scss */
   header h1:hover {
     background: transparent url("../images/pcs_logo.png") 0 0 no-repeat; }
 
+/* line 1, scss/_social.scss */
 #social ul {
   overflow-x: hidden;
   position: relative;
   left: 35px;
   top: 5px; }
+  /* line 7, scss/_social.scss */
   #social ul li {
     float: left;
     height: 32px;
     margin-right: 10px;
     text-indent: -9999em;
     width: 32px; }
+    /* line 14, scss/_social.scss */
     #social ul li:nth-of-type(2) a {
       background-position: -32px 0; }
+    /* line 15, scss/_social.scss */
     #social ul li:nth-of-type(3) a {
       background-position: -64px 0; }
+    /* line 17, scss/_social.scss */
     #social ul li a {
       background-image: url("../images/social_sprite.png");
       display: block;
       opacity: 0.5;
       height: 32px;
       width: 32px; }
+      /* line 24, scss/_social.scss */
       #social ul li a:hover {
         opacity: 1;
         -webkit-transition: opacity 500ms ease;
@@ -370,11 +438,13 @@ header h1 {
         -o-transition: opacity 500ms ease;
         transition: opacity 500ms ease; }
 
+/* line 3, scss/_sidebar.scss */
 nav#sidebar {
   float: left;
   position: relative;
   width: 150px; }
 
+/* line 9, scss/_sidebar.scss */
 #main_nav {
   box-shadow: 1px 1px 2px 1px #333;
   height: 520px;
@@ -382,12 +452,18 @@ nav#sidebar {
   width: 150px;
   -webkit-box-shadow: 1px 1px 2px 1px #333;
   -moz-box-shadow: 1px 1px 2px 1px #333;
-  -moz-border-radius-topleft: 0px;
   -moz-border-radius-topright: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -o-border-top-right-radius: 20px;
+  -ms-border-top-right-radius: 20px;
+  -khtml-border-top-right-radius: 20px;
+  border-top-right-radius: 20px;
   -moz-border-radius-bottomright: 20px;
-  -moz-border-radius-bottomleft: 0px;
-  -webkit-border-radius: 0px 20px 20px 0px;
-  border-radius: 0px 20px 20px 0px;
+  -webkit-border-bottom-right-radius: 20px;
+  -o-border-bottom-right-radius: 20px;
+  -ms-border-bottom-right-radius: 20px;
+  -khtml-border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   background: #5e3519;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -406,26 +482,33 @@ nav#sidebar {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5e3519', endColorstr='#6b6662',GradientType=0 );
   /* IE6-8 */ }
+  /* line 21, scss/_sidebar.scss */
   #main_nav > li {
     font-size: 1.28em;
     font-weight: bold;
     border-bottom: 2px solid #2c0d0c;
     padding: 0.5em;
     text-shadow: 1px 1px 0px #111; }
+    /* line 28, scss/_sidebar.scss */
     #main_nav > li > a {
       margin-bottom: 5px; }
+      /* line 30, scss/_sidebar.scss */
       #main_nav > li > a:hover {
         text-decoration: none;
         color: #ae2a30; }
+  /* line 36, scss/_sidebar.scss */
   #main_nav ul li {
     font-size: 14px;
     font-weight: normal;
     margin: 1em 0;
     text-shadow: none; }
+    /* line 42, scss/_sidebar.scss */
     #main_nav ul li a {
       color: #060606; }
+      /* line 44, scss/_sidebar.scss */
       #main_nav ul li a:hover {
         color: #fafafa; }
+  /* line 49, scss/_sidebar.scss */
   #main_nav li ul {
     display: none;
     margin-bottom: -22px;
@@ -452,102 +535,126 @@ nav#sidebar {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5e1a19', endColorstr='#461413',GradientType=0 );
     /* IE6-8 */ }
 
+/* line 61, scss/_sidebar.scss */
 .no-js #main_nav li:hover ul {
   display: block; }
 
+/* line 3, scss/_content.scss */
 #content {
   float: left;
   margin-left: 20px; }
+  /* line 7, scss/_content.scss */
   #content div.column {
     float: left;
     padding-right: 20px;
     width: 380px;
     z-index: 10; }
+    /* line 13, scss/_content.scss */
     #content div.column h1 {
       text-align: center;
       text-shadow: 1px 1px 0px #333;
       filter: dropshadow(color=#333333, offx=1, offy=1);
       z-index: -100; }
+    /* line 20, scss/_content.scss */
     #content div.column > h1 {
-      -moz-border-radius-topleft: 20px;
-      -moz-border-radius-topright: 20px;
-      -moz-border-radius-bottomright: 0px;
-      -moz-border-radius-bottomleft: 0px;
-      -webkit-border-radius: 20px 20px 0px 0px;
-      border-radius: 20px 20px 0px 0px;
+      -moz-border-radius-topleft: 10px;
+      -webkit-border-top-left-radius: 10px;
+      -o-border-top-left-radius: 10px;
+      -ms-border-top-left-radius: 10px;
+      -khtml-border-top-left-radius: 10px;
+      border-top-left-radius: 10px;
+      -moz-border-radius-topright: 10px;
+      -webkit-border-top-right-radius: 10px;
+      -o-border-top-right-radius: 10px;
+      -ms-border-top-right-radius: 10px;
+      -khtml-border-top-right-radius: 10px;
+      border-top-right-radius: 10px;
+      background: #852026;
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg1MjAyNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iIzc4MWQyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ODExMTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #852026), color-stop(32%, #781d22), color-stop(100%, #481114));
+      background: -webkit-linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
+      background: -o-linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
+      background: -ms-linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
+      background: linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#852026', endColorstr='#481114',GradientType=0 );
       border-right: 2px solid rgba(66, 66, 66, 0.5);
       height: 40px;
       line-height: 40px;
       margin-bottom: 0;
       margin-top: 5px;
       width: 100.25%; }
+    /* line 31, scss/_content.scss */
     #content div.column img {
       width: 100%;
       z-index: -100; }
+    /* line 36, scss/_content.scss */
+    #content div.column .poster {
+      position: relative; }
+      /* line 39, scss/_content.scss */
+      #content div.column .poster h1 {
+        font-size: 1.28em;
+        margin-left: 84px;
+        text-align: left; }
+      /* line 40, scss/_content.scss */
+      #content div.column .poster img {
+        -moz-box-shadow: 1px 1px 2px 1px #333333;
+        -webkit-box-shadow: 1px 1px 2px 1px #333333;
+        -o-box-shadow: 1px 1px 2px 1px #333333;
+        box-shadow: 1px 1px 2px 1px #333333; }
+      /* line 41, scss/_content.scss */
+      #content div.column .poster p.dates {
+        font-weight: bold; }
+      /* line 43, scss/_content.scss */
+      #content div.column .poster p.links {
+        color: #852025; }
+        /* line 45, scss/_content.scss */
+        #content div.column .poster p.links a {
+          padding: 0.5em; }
+      /* line 48, scss/_content.scss */
+      #content div.column .poster ul, #content div.column .poster p {
+        margin-left: 84px;
+        margin-right: 2em; }
+      /* line 53, scss/_content.scss */
+      #content div.column .poster .overlay {
+        -moz-border-radius-bottomleft: 20px;
+        -webkit-border-bottom-left-radius: 20px;
+        -o-border-bottom-left-radius: 20px;
+        -ms-border-bottom-left-radius: 20px;
+        -khtml-border-bottom-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        -moz-border-radius-bottomright: 20px;
+        -webkit-border-bottom-right-radius: 20px;
+        -o-border-bottom-right-radius: 20px;
+        -ms-border-bottom-right-radius: 20px;
+        -khtml-border-bottom-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: none;
+        height: 50%;
+        position: absolute;
+        width: 100%; }
+      /* line 61, scss/_content.scss */
+      #content div.column .poster:hover div.overlay {
+        display: block; }
 
-#content div.column > h1 {
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright: 10px;
-  -moz-border-radius-bottomright: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
-  border-radius: 10px 10px 0px 0px;
-  background: #852026;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg1MjAyNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iIzc4MWQyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ODExMTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #852026), color-stop(32%, #781d22), color-stop(100%, #481114));
-  background: -webkit-linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
-  background: -o-linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
-  background: -ms-linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
-  background: linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#852026', endColorstr='#481114',GradientType=0 ); }
-
-#content div.column div.poster {
-  position: relative; }
-  #content div.column div.poster img {
-    -webkit-box-shadow: 1px 1px 2px 1px #333;
-    -moz-box-shadow: 1px 1px 2px 1px #333;
-    box-shadow: 1px 1px 2px 1px #333; }
-  #content div.column div.poster div.overlay {
-    -moz-border-radius-topleft: 0px;
-    -moz-border-radius-topright: 0px;
-    -moz-border-radius-bottomright: 20px;
-    -moz-border-radius-bottomleft: 20px;
-    -webkit-border-radius: 0px 0px 20px 20px;
-    border-radius: 0px 0px 20px 20px;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: none;
-    height: 50%;
-    position: absolute;
-    width: 100%; }
-    #content div.column div.poster div.overlay h1 {
-      font-size: 1.28em;
-      margin-left: 84px;
-      text-align: left; }
-    #content div.column div.poster div.overlay p.dates {
-      font-weight: bold; }
-    #content div.column div.poster div.overlay p.links {
-      color: #852025; }
-      #content div.column div.poster div.overlay p.links a {
-        padding: 0.5em; }
-  #content div.column div.poster ul, #content div.column div.poster p {
-    margin-left: 84px;
-    margin-right: 2em; }
-  #content div.column div.poster:hover div.overlay {
-    display: block; }
-
+/* line 1, scss/_footer.scss */
 footer {
   float: left;
   margin-top: 20px; }
+  /* line 6, scss/_footer.scss */
   footer div {
     float: left;
     width: 150px; }
+    /* line 10, scss/_footer.scss */
     footer div p {
       margin: 0; }
+  /* line 12, scss/_footer.scss */
   footer div.column {
     margin-left: 20px;
     width: 380px; }
 
+/* line 1, scss/_xmas.scss */
 div.xmas {
   background: url(../images/holly.png) 0 0 no-repeat;
   height: 38px;
@@ -562,6 +669,7 @@ div.xmas {
    Please define your styles before this section.
    ========================================================================== */
 /* For image replacement */
+/* line 283, scss/main.scss */
 .ir {
   display: block;
   text-indent: -999em;
@@ -570,17 +678,20 @@ div.xmas {
   text-align: left;
   direction: ltr; }
 
+/* line 291, scss/main.scss */
 .ir br {
   display: none; }
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 296, scss/main.scss */
 .hidden {
   display: none;
   visibility: hidden; }
 
 /* Hide only visually, but have it available for screenreaders: by Jon Neal.
   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 302, scss/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -592,6 +703,7 @@ div.xmas {
   width: 1px; }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 313, scss/main.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -601,17 +713,21 @@ div.xmas {
   width: auto; }
 
 /* Hide visually and from screenreaders, but maintain layout */
+/* line 322, scss/main.scss */
 .invisible {
   visibility: hidden; }
 
 /* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 326, scss/main.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table; }
 
+/* line 330, scss/main.scss */
 .clearfix:after {
   clear: both; }
 
+/* line 333, scss/main.scss */
 .clearfix {
   zoom: 1; }
 

@@ -10,7 +10,7 @@ header { height: 60px; width:1090px;}
   width:140px;
   
   input{
-    @include round-all;
+    @include border-radius(10px);
     float:left;
     margin-right:0.5em;
     width:90px;

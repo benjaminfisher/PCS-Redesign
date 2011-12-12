@@ -4,10 +4,9 @@
   float:left;
   margin-left: $gutter;
   
- 
   div.column{
     float:left;
-    padding-right:20px;
+    padding-right:$gutter;
     width: 380px;
     z-index: 10;
     
@@ -19,7 +18,8 @@
     }
     
     > h1{
-      @include round-top;
+      @include border-top-radius(10px);
+      @include col-head-gradient;
       border-right:2px solid rgba(66,66,66,0.5);
       height:40px;
       line-height: 40px;
@@ -32,46 +32,34 @@
       width:100%;
       z-index: -100;
     }
-  }
-}
-
-#content div.column > h1{
-  @include round-top(10px);
-  @include col-head-gradient;
-
-}
-#content div.column div.poster{
-  position:relative;
-  
-  img{
-    -webkit-box-shadow: 1px 1px 2px 1px #333;
-    -moz-box-shadow: 1px 1px 2px 1px #333;
-    box-shadow: 1px 1px 2px 1px #333;
-  }
-  
-  div.overlay{
-    @include round-bottom;
-    background-color: rgba(0,0,0, 0.9);
-    display:none;
-    height:50%;
-    position:absolute;
-    width:100%;
     
-    h1{ font-size:1.28em; margin-left: 84px; text-align:left; }
-    p.dates{ font-weight:bold; }
-    p.links{
-      color:#852025;
+    .poster{
+      position:relative; 
       
-      a{ padding:0.5em; }
-    }
-  }
-  
-  ul, p{
-    margin-left: 84px;
-    margin-right:2em;
-  }
-    
-  &:hover div.overlay{
-    display:block;
-  }
-}
+      h1{ font-size:1.28em; margin-left: 84px; text-align:left; }
+      img{ @include box-shadow(1px 1px 2px 1px #333);}
+      p.dates{ font-weight:bold; }
+      
+      p.links{
+        color:#852025;
+        a{ padding:0.5em; }
+      }
+      
+      ul, p{
+        margin-left: 84px;
+        margin-right:2em;
+      }
+      
+      .overlay{
+        @include border-bottom-radius(20px);
+        background-color: rgba(0,0,0, 0.9);
+        display:none;
+        height:50%;
+        position:absolute;
+        width:100%;
+      }
+      &:hover div.overlay{ display:block; }
+      
+    }//End div.poster sytles
+  }//end div.column styles
+}// End #content styles
