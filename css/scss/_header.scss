@@ -21,7 +21,11 @@ header h1 {
   height:100%;
   margin-left:170px;
   position:relative;
-  width: ($column + $gutter)*10;
+  width: $span*10;
+  
+  a{ height:100%; width:100%; }
   
   @include header_gradient;
+  
+  &:hover{background:$pcs_back;}
 }

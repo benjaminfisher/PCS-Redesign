@@ -273,7 +273,7 @@ table {
    Primary styles
    Author: Benjamin J. Fisher
    ========================================================================== */
-@import 'global', 'header', 'sidebar', 'content', 'footer', 'xmas';
+@import 'global', 'header', 'sidebar', 'footer';
 
 /* =============================================================================
    Non-semantic helper classes
@@ -281,8 +281,8 @@ table {
    ========================================================================== */
 /* For image replacement */
 .ir {
-  color:rgba(0,0,0,0) !important;
   display: block;
+  text-indent: -999em;
   overflow: hidden;
   background-repeat: no-repeat;
   text-align: left;

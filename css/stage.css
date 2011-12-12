@@ -455,87 +455,6 @@ nav#sidebar {
 .no-js #main_nav li:hover ul {
   display: block; }
 
-#content {
-  float: left;
-  margin-left: 20px; }
-  #content div.column {
-    float: left;
-    padding-right: 20px;
-    width: 380px;
-    z-index: 10; }
-    #content div.column h1 {
-      text-align: center;
-      text-shadow: 1px 1px 0px #333;
-      filter: dropshadow(color=#333333, offx=1, offy=1);
-      z-index: -100; }
-    #content div.column > h1 {
-      -moz-border-radius-topleft: 20px;
-      -moz-border-radius-topright: 20px;
-      -moz-border-radius-bottomright: 0px;
-      -moz-border-radius-bottomleft: 0px;
-      -webkit-border-radius: 20px 20px 0px 0px;
-      border-radius: 20px 20px 0px 0px;
-      border-right: 2px solid rgba(66, 66, 66, 0.5);
-      height: 40px;
-      line-height: 40px;
-      margin-bottom: 0;
-      margin-top: 5px;
-      width: 100.25%; }
-    #content div.column img {
-      width: 100%;
-      z-index: -100; }
-
-#content div.column > h1 {
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright: 10px;
-  -moz-border-radius-bottomright: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
-  border-radius: 10px 10px 0px 0px;
-  background: #852026;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg1MjAyNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iIzc4MWQyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ODExMTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #852026), color-stop(32%, #781d22), color-stop(100%, #481114));
-  background: -webkit-linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
-  background: -o-linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
-  background: -ms-linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
-  background: linear-gradient(top, #852026 0%, #781d22 32%, #481114 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#852026', endColorstr='#481114',GradientType=0 ); }
-
-#content div.column div.poster {
-  position: relative; }
-  #content div.column div.poster img {
-    -webkit-box-shadow: 1px 1px 2px 1px #333;
-    -moz-box-shadow: 1px 1px 2px 1px #333;
-    box-shadow: 1px 1px 2px 1px #333; }
-  #content div.column div.poster div.overlay {
-    -moz-border-radius-topleft: 0px;
-    -moz-border-radius-topright: 0px;
-    -moz-border-radius-bottomright: 20px;
-    -moz-border-radius-bottomleft: 20px;
-    -webkit-border-radius: 0px 0px 20px 20px;
-    border-radius: 0px 0px 20px 20px;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: none;
-    height: 50%;
-    position: absolute;
-    width: 100%; }
-    #content div.column div.poster div.overlay h1 {
-      font-size: 1.28em;
-      margin-left: 84px;
-      text-align: left; }
-    #content div.column div.poster div.overlay p.dates {
-      font-weight: bold; }
-    #content div.column div.poster div.overlay p.links {
-      color: #852025; }
-      #content div.column div.poster div.overlay p.links a {
-        padding: 0.5em; }
-  #content div.column div.poster ul, #content div.column div.poster p {
-    margin-left: 84px;
-    margin-right: 2em; }
-  #content div.column div.poster:hover div.overlay {
-    display: block; }
-
 footer {
   float: left;
   margin-top: 20px; }
@@ -548,23 +467,14 @@ footer {
     margin-left: 20px;
     width: 380px; }
 
-div.xmas {
-  background: url(../images/holly.png) 0 0 no-repeat;
-  height: 38px;
-  position: absolute;
-  right: -10px;
-  top: -10px;
-  width: 38px;
-  z-index: 9000; }
-
 /* =============================================================================
    Non-semantic helper classes
    Please define your styles before this section.
    ========================================================================== */
 /* For image replacement */
 .ir {
-  color: rgba(0, 0, 0, 0) !important;
   display: block;
+  text-indent: -999em;
   overflow: hidden;
   background-repeat: no-repeat;
   text-align: left;

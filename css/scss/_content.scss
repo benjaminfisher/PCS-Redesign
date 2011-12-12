@@ -56,6 +56,14 @@
     height:50%;
     position:absolute;
     width:100%;
+    
+    h1{ font-size:1.28em; margin-left: 84px; text-align:left; }
+    p.dates{ font-weight:bold; }
+    p.links{
+      color:#852025;
+      
+      a{ padding:0.5em; }
+    }
   }
   
   ul, p{
@@ -67,9 +75,3 @@
     display:block;
   }
 }
-
-#content div.column div.overlay h1 { font-size:1.28em; margin-left: 84px; text-align:left; }
-#content div.column div.overlay p.dates { font-weight: bold; }
-
-#content div.column div.overlay p.links a { padding:0.5em; }
-#content div.column div.overlay p.links { color:#852025; }
