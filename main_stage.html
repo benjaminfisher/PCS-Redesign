@@ -82,7 +82,28 @@
 			</li>
 		</ul>
 	</nav>
-	<div id="content"></div>
+	<div id="content">
+		<div class="column">
+			<h1>A Christmas Story (2001)</h1>
+			<div class="wrapper">
+				<div id="slider1" class="slideshow" >
+					<img src="images/xmas_story001.jpg" rel="xmas" alt="Ralphie" title="Ralphie"/>
+					<img src="images/xmas_story002.jpg" rel="xmas" alt="Ralphie" title="Ralphie"/>
+					<img src="images/xmas_story003.jpg" rel="xmas" alt="Ralphie, Randy and Santa" title="Ralphie, Randy and Santa"/>
+					<img src="images/xmas_story004.jpg" rel="xmas" alt="Ralphie, Randy and Santa" title="Ralphie, Randy and Santa"/>
+					<img src="images/xmas_story005.jpg" rel="xmas" alt="Holiday dreams in the Parker household" title="Holiday dreams in the Parker household"/>
+					<img src="images/xmas_story006.jpg" rel="xmas" alt="A Christmas Story" title="A Christmas Story"/>
+				</div>
+				<div class="pager"></div>
+			</div>
+			<p>Performance times:</p>
+			<p>Tuesday - Sunday evenings at 7:30 p.m</p>
+			<p>Saturday and Sunday matinees at 2:00 p.m.</p>
+			<p>Thursday matinees at noon</p>
+			<p>Performace length: approx. 2 hrs 15 min with 1 intermission.</p>
+			<p><em>Please Note:</em> Children under 6 years old cannot be admitted.</p>
+		</div>
+	</div>
 		
 	<footer>
 		<div>
@@ -104,7 +125,15 @@
 		</div>
 	</footer>
 
-	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-	<script>head.js("http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", "js/libs/jquery.xmas.js", "js/script.js")</script>
+	<script>head.js("http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js",
+					"js/pluggins/jquery.cycle.all.js",	"js/pluggins/jquery.easing-1.3.pack.js",
+					"js/script.js", function(){
+							$('#slider1').cycle({
+								fx:'fade',
+								pause:1,
+								pager: ".pager"
+							});
+					})</script>
+
 </body>
 </html>

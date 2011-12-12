@@ -1,6 +1,7 @@
 (function($) {
     $.fn.extend({
         xmas: function() {
+        	if(this.length <= 0) return;
         	return this.each(function() {
         		position = $(this).css('position');
         		

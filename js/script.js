@@ -29,7 +29,5 @@ $(function(){
 				.slideDown()
 				.addClass('open');
 		};
-	})
-	
-	$('.xmas').xmas();
+	})	
 })

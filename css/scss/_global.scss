@@ -10,6 +10,8 @@ $hover_color:#FAFAFA;
 $active_color:#FFF;
 
 $bg_color:#060606;
+$offwhite:#eaeaea;
+$pcs_brown:#422511;
 
 html{
   padding-top:0px;
@@ -35,3 +37,36 @@ a { color: $link_color; text-decoration:none;
 
 }
 h1 { font-size: 1.71428571em; }
+
+@mixin content_style{
+  float:left;
+  margin-left: $gutter;
+}
+
+@mixin column($num){
+    float:left;
+    padding-right:$gutter;
+    position:relative;
+    width: $span * ($num - 1) + $column;
+    z-index: 10;
+}
+
+@mixin header_treatment{
+  h1{
+    text-align:center;
+    text-shadow: 1px 1px 0px #333;
+    filter: dropshadow(color=#333, offx=1, offy=1);
+    z-index: -100;
+  }
+  
+  > h1{
+    @include border-top-radius(10px);
+    @include col-head-gradient;
+    border-right:2px solid rgba(66,66,66,0.5);
+    height:40px;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    width: 100.25%;
+  }
+}
