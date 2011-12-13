@@ -1,7 +1,7 @@
 @import 'gradient', 'extras';
 
 #content {
-  @include content;
+  @include content_style;
   
   div.column{
     @include column(5);

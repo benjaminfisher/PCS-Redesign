@@ -1,4 +1,4 @@
-@import 'extras', 'compass/css3';
+@import 'extras', 'compass/css3', 'compass/typography/text/replacement';
 
 #content{
   @include content_style;
@@ -9,7 +9,68 @@
       &:last-child{
         border-bottom:2px solid #777;
         line-height:3em;
-      };
+      }
+    }
+  }
+  section.column{
+    @include column(4);
+    
+    div.show_info{
+      @include background(linear-gradient(top left, #999, #555));
+      
+      height:506px;
+      margin-top:45px;
+      padding:10px;
+      
+      h2{ margin: 0; }
+      h3{ color:$link-color; margin-bottom:0px; margin:0px 0px 1em;}
+      p{ color:#010101; margin-top:0px;}
+      q + p { margin-top: 1em; }
+      q{ font-size:1.2em; margin:1em 0;}
+      
+      .links li{
+        float:left;
+        font-weight:bolder;
+        padding-right:1em;
+        @include text-shadow(#333 1px 1px);
+      }
+    }
+    
+    .sponsors{
+      float:left;
+      
+      ul li{
+        $height:72px;
+        $width:85px;
+        
+        background-image:url(../images/sponsor_sprite.jpg);
+        
+        float:left;
+        margin-right:$gutter;
+        margin-bottom:$gutter;
+        height:$height;
+        width:$width;
+      
+        &:nth-of-type(3), &:nth-of-type(6){ margin-right:0px; }
+        
+        &:nth-of-type(2){ background-position: -($width) 0; }
+        &:nth-of-type(3){ background-position: -($width * 2) 0; }
+        &:nth-of-type(4){ background-position: 0 (- $height); }
+        &:nth-of-type(5){ background-position: (- $width) (- $height); }
+        &:nth-of-type(6){ background-position: (- $width * 2) (- $height); }
+        &:nth-of-type(7){ background-position: 0 (- $height * 2); }
+        &:nth-of-type(8){ background-position: (- $width) (- $height * 2); }
+
+        a{
+          color:rgba(0,0,0,0);
+          display: block;
+          height:$height - 1;
+          width:$width - 1;
+          
+          &:hover{ border:2px solid $link_color;}
+          &:active{ border:2px solid lighten($link_color, 20%); }
+        }
+      }
     }
   }
 }
@@ -32,12 +93,19 @@ div.column{
       
       a{
         @include border-radius(10px);
-        background-color:#020202;
+        
+        $pager_link_bg: #020202;
+        background-color:$pager_link_bg;
         border: 2px solid #333;
         color:$offwhite;
         margin-right:$gutter;
         padding:0 5px;
         text-align:center;
+        
+        &.activeSlide{
+          background-color:lighten($pager_link_bg, 10%);
+          border:2px solid $link_color;
+        }
       }
     }
   }
@@ -53,3 +121,5 @@ div.slideshow{
     width:435px;
   }
 }
+
+footer div.column{ margin:0px; }

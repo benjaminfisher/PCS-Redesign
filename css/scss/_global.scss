@@ -36,7 +36,7 @@ a { color: $link_color; text-decoration:none;
   &:active { color: $active_color; }
 
 }
-h1 { font-size: 1.71428571em; }
+h1 { font-size: 1.71428571em; text-transform:uppercase;}
 
 @mixin content_style{
   float:left;

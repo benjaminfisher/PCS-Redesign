@@ -354,7 +354,8 @@ a {
 
 /* line 39, scss/_global.scss */
 h1 {
-  font-size: 1.71428571em; }
+  font-size: 1.71428571em;
+  text-transform: uppercase; }
 
 /* line 3, scss/_header.scss */
 header {
@@ -550,8 +551,98 @@ nav#sidebar {
     #content div.column p:last-child {
       border-bottom: 2px solid #777;
       line-height: 3em; }
+  /* line 15, scss/_ms_content.scss */
+  #content section.column {
+    float: left;
+    padding-right: 20px;
+    position: relative;
+    width: 300px;
+    z-index: 10; }
+    /* line 18, scss/_ms_content.scss */
+    #content section.column div.show_info {
+      background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #999999), color-stop(100%, #555555));
+      background: -webkit-linear-gradient(top left, #999999, #555555);
+      background: -moz-linear-gradient(top left, #999999, #555555);
+      background: -o-linear-gradient(top left, #999999, #555555);
+      background: -ms-linear-gradient(top left, #999999, #555555);
+      background: linear-gradient(top left, #999999, #555555);
+      height: 506px;
+      margin-top: 45px;
+      padding: 10px; }
+      /* line 25, scss/_ms_content.scss */
+      #content section.column div.show_info h2 {
+        margin: 0; }
+      /* line 26, scss/_ms_content.scss */
+      #content section.column div.show_info h3 {
+        color: #852025;
+        margin-bottom: 0px;
+        margin: 0px 0px 1em; }
+      /* line 27, scss/_ms_content.scss */
+      #content section.column div.show_info p {
+        color: #010101;
+        margin-top: 0px; }
+      /* line 28, scss/_ms_content.scss */
+      #content section.column div.show_info q + p {
+        margin-top: 1em; }
+      /* line 29, scss/_ms_content.scss */
+      #content section.column div.show_info q {
+        font-size: 1.2em;
+        margin: 1em 0; }
+      /* line 31, scss/_ms_content.scss */
+      #content section.column div.show_info .links li {
+        float: left;
+        font-weight: bolder;
+        padding-right: 1em;
+        text-shadow: #333333 1px 1px; }
+    /* line 39, scss/_ms_content.scss */
+    #content section.column .sponsors {
+      float: left; }
+      /* line 42, scss/_ms_content.scss */
+      #content section.column .sponsors ul li {
+        background-image: url(../images/sponsor_sprite.jpg);
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        height: 72px;
+        width: 85px; }
+        /* line 54, scss/_ms_content.scss */
+        #content section.column .sponsors ul li:nth-of-type(3), #content section.column .sponsors ul li:nth-of-type(6) {
+          margin-right: 0px; }
+        /* line 56, scss/_ms_content.scss */
+        #content section.column .sponsors ul li:nth-of-type(2) {
+          background-position: -85px 0; }
+        /* line 57, scss/_ms_content.scss */
+        #content section.column .sponsors ul li:nth-of-type(3) {
+          background-position: -170px 0; }
+        /* line 58, scss/_ms_content.scss */
+        #content section.column .sponsors ul li:nth-of-type(4) {
+          background-position: 0 -72px; }
+        /* line 59, scss/_ms_content.scss */
+        #content section.column .sponsors ul li:nth-of-type(5) {
+          background-position: -85px -72px; }
+        /* line 60, scss/_ms_content.scss */
+        #content section.column .sponsors ul li:nth-of-type(6) {
+          background-position: -170px -72px; }
+        /* line 61, scss/_ms_content.scss */
+        #content section.column .sponsors ul li:nth-of-type(7) {
+          background-position: 0 -144px; }
+        /* line 62, scss/_ms_content.scss */
+        #content section.column .sponsors ul li:nth-of-type(8) {
+          background-position: -85px -144px; }
+        /* line 64, scss/_ms_content.scss */
+        #content section.column .sponsors ul li a {
+          color: rgba(0, 0, 0, 0);
+          display: block;
+          height: 71px;
+          width: 84px; }
+          /* line 70, scss/_ms_content.scss */
+          #content section.column .sponsors ul li a:hover {
+            border: 2px solid #852025; }
+          /* line 71, scss/_ms_content.scss */
+          #content section.column .sponsors ul li a:active {
+            border: 2px solid #d03b42; }
 
-/* line 17, scss/_ms_content.scss */
+/* line 78, scss/_ms_content.scss */
 div.column {
   float: left;
   padding-right: 20px;
@@ -593,7 +684,7 @@ div.column {
     margin-bottom: 0;
     margin-top: 5px;
     width: 100.25%; }
-  /* line 21, scss/_ms_content.scss */
+  /* line 82, scss/_ms_content.scss */
   div.column div.wrapper {
     background: #eaeaea;
     border-right: 2px solid rgba(10, 10, 10, 0.5);
@@ -601,11 +692,11 @@ div.column {
     height: 385px;
     margin-bottom: 1em;
     width: 100.3%; }
-    /* line 29, scss/_ms_content.scss */
+    /* line 90, scss/_ms_content.scss */
     div.column div.wrapper div.pager {
       width: 220px;
       margin: 25px auto 0px; }
-      /* line 33, scss/_ms_content.scss */
+      /* line 94, scss/_ms_content.scss */
       div.column div.wrapper div.pager a {
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -619,16 +710,24 @@ div.column {
         margin-right: 20px;
         padding: 0 5px;
         text-align: center; }
+        /* line 105, scss/_ms_content.scss */
+        div.column div.wrapper div.pager a.activeSlide {
+          background-color: #1c1c1c;
+          border: 2px solid #852025; }
 
-/* line 46, scss/_ms_content.scss */
+/* line 114, scss/_ms_content.scss */
 div.slideshow {
   left: 13px;
   position: relative;
   top: 10px;
   width: 100%; }
-  /* line 52, scss/_ms_content.scss */
+  /* line 120, scss/_ms_content.scss */
   div.slideshow img {
     width: 435px; }
+
+/* line 125, scss/_ms_content.scss */
+footer div.column {
+  margin: 0px; }
 
 /* line 1, scss/_footer.scss */
 footer {
@@ -645,6 +744,11 @@ footer {
   footer div.column {
     margin-left: 20px;
     width: 380px; }
+  /* line 16, scss/_footer.scss */
+  footer div.narrow {
+    width: 370px;
+    padding: 0;
+    margin: 0; }
 
 /* =============================================================================
    Non-semantic helper classes
